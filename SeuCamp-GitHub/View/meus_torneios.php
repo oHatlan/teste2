@@ -14,8 +14,18 @@
     <article class="card">
         <h2><?= htmlspecialchars($torneio->nome) ?></h2>
         <p><strong>Jogo:</strong> <?= htmlspecialchars($torneio->nome_jogo) ?></p>
-        <p><strong>Premiacao:</strong> <?= htmlspecialchars($torneio->premiacao ?: 'Nao informada') ?></p>
-        <a class="botao" href="?p=torneio&id=<?= $torneio->id ?>">Ver</a>
+        <p><strong>Equipes:</strong> <?= $torneio->total_equipes ?></p>
+
+        <footer class="acoes">
+            <a class="botao" href="?p=torneio&id=<?= $torneio->id ?>">Ver</a>
+            <a class="botao" href="?p=editar-torneio&id=<?= $torneio->id ?>">Editar</a>
+
+            <form action="?p=excluir-torneio" method="post" onsubmit="return confirm('Excluir este torneio?')">
+                <input type="hidden" name="csrf" value="<?= Seguranca::token() ?>">
+                <input type="hidden" name="id" value="<?= $torneio->id ?>">
+                <button type="submit">Excluir</button>
+            </form>
+        </footer>
     </article>
 <?php endforeach; ?>
 

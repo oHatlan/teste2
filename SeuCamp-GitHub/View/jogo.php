@@ -29,6 +29,7 @@
         <h2><?= htmlspecialchars($torneio->nome) ?></h2>
         <p><?= htmlspecialchars($torneio->descricao) ?></p>
         <p><strong>Premiacao:</strong> <?= htmlspecialchars($torneio->premiacao ?: 'Nao informada') ?></p>
+        <p><strong>Equipes inscritas:</strong> <?= $torneio->total_equipes ?></p>
         <a class="botao" href="?p=torneio&id=<?= $torneio->id ?>">Abrir torneio</a>
     </article>
 <?php endforeach; ?>

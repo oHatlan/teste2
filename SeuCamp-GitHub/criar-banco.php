@@ -27,7 +27,7 @@ require __DIR__ . "/View/cabecalho.php";
 
 <section class="caixa">
     <h1>Criar banco de dados</h1>
-    <p>Clique no botao abaixo para criar o banco seucamp, as tabelas e os dados de exemplo.</p>
+    <p>Clique no botao abaixo para criar o banco seucamp, as tabelas e alguns dados de exemplo.</p>
 
     <?php if ($sucesso): ?>
         <p class="mensagem sucesso"><?= htmlspecialchars($sucesso) ?></p>

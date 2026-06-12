@@ -3,8 +3,8 @@
 <section class="caixa">
     <h1>Sobre o SeuCamp</h1>
     <p>O SeuCamp e um site para organizar campeonatos de jogos de forma simples e direta.</p>
-    <p>Nesta primeira versao, o usuario pode criar uma conta, fazer login, visualizar jogos e cadastrar torneios simples.</p>
-    <p>A proposta inicial e deixar pronta a base do site para receber a edicao, exclusao e inscricao de equipes depois.</p>
+    <p>Nele, o usuario pode criar uma conta, fazer login, escolher um jogo, visualizar torneios disponiveis e inscrever sua equipe.</p>
+    <p>A proposta do site e facilitar o cadastro de campeonatos e a participacao de equipes em partidas competitivas.</p>
 </section>
 
 <section class="caixa">
