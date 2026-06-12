@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #151922;
+    color: #f8fafc;
+    line-height: 1.5;
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 56px;
+    background: #22d3ee;
+}
+
+nav {
+    background: #151922;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    border-bottom: 1px solid #222b3a;
+}
+
+nav .logo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background: #202838;
+    color: #ffffff;
+}
+
+main {
+    max-width: 1140px;
+    margin: 56px auto;
+    padding: 0 18px;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 34px;
+    text-shadow: 2px 2px 0 #f97316;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top: 0;
+    color: #cbd5e1;
+}
+
+.inicio-topo {
+    max-width: 760px;
+    margin: 0 auto 34px;
+    text-align: center;
+    border-left: 5px solid #22d3ee;
+}
+
+.inicio-topo h1 {
+    margin-bottom: 12px;
+}
+
+.inicio-topo p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.titulo-central {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.grade-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 22px 16px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.jogo-inicio {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    width: 176px;
+}
+
+.jogo-inicio img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 7px;
+    background: #202838;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .28);
+}
+
+.jogo-inicio strong {
+    display: block;
+    margin-top: 9px;
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.jogo-inicio:hover img {
+    outline: 2px solid #22d3ee;
+    box-shadow: 0 14px 32px rgba(34, 211, 238, .18);
+}
+
+.caixa,
+.card,
+.formulario {
+    background: #1b2230;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .22);
+}
+
+.destaque {
+    border-left: 5px solid #22d3ee;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    border-color: #475569;
+}
+
+.capa-jogo,
+.imagem-jogo {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    background: #202838;
+    border: 1px solid #334155;
+}
+
+.capa-jogo {
+    height: 190px;
+    object-fit: cover;
+}
+
+.imagem-jogo {
+    max-height: 310px;
+    object-fit: cover;
+}
+
+.botao,
+button {
+    display: inline-block;
+    background: #22d3ee;
+    color: #0f172a;
+    border: 1px solid #22d3ee;
+    border-radius: 6px;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botao:hover,
+button:hover {
+    background: #67e8f9;
+    border-color: #67e8f9;
+}
+
+.card .botao {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.formulario {
+    max-width: 620px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    font: inherit;
+    background: #111827;
+    color: #ffffff;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, .14);
+}
+
+.formulario footer,
+.acoes {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formulario footer a {
+    color: #67e8f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formulario footer a:hover {
+    text-decoration: underline;
+}
+
+.formulario footer button[type="button"] {
+    background: #111827;
+    color: #e5e7eb;
+    border-color: #334155;
+}
+
+.formulario footer button[type="button"]:hover {
+    background: #202838;
+}
+
+.abas {
+    border-top: 1px solid #2d3748;
+    padding-top: 14px;
+    margin-top: 16px;
+}
+
+.mensagem {
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.mensagem.sucesso {
+    background: #052e16;
+    color: #bbf7d0;
+    border: 1px solid #15803d;
+}
+
+.mensagem.erro {
+    background: #450a0a;
+    color: #fecaca;
+    border: 1px solid #b91c1c;
+}
+
+.vazio {
+    color: #cbd5e1;
+    background: #1b2230;
+    border: 1px dashed #475569;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+dialog {
+    border: 0;
+    border-radius: 8px;
+    padding: 0;
+    width: min(540px, 92vw);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .45);
+}
+
+dialog .formulario {
+    margin: 0;
+    max-width: none;
+    box-shadow: none;
+    border: 0;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, .65);
+}
+
+@media (max-width: 700px) {
+    body::before {
+        width: 48px;
+    }
+
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 18px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav a {
+        padding: 7px 8px;
+    }
+
+    main {
+        margin: 28px auto;
+        padding: 0 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-bottom: 24px;
+    }
+
+    .grade-inicio {
+        gap: 18px 12px;
+    }
+
+    .jogo-inicio {
+        width: calc(50% - 6px);
+    }
+
+    .caixa,
+    .card,
+    .formulario {
+        padding: 16px;
+    }
+}
